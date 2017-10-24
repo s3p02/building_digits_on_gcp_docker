@@ -10,7 +10,7 @@ lspci
 
 # Install Nvidia Drivers & CUDA 8
 
-Save the following code using vim or nano, name your file [0_install_nvidia_drivers.sh](https://github.com/s3p02/building_digits_on_gcp_docker/blob/master/0_install_nvidia_drivers.sh)
+## Save the following code using vim or nano, name your file [0_install_nvidia_drivers.sh](https://github.com/s3p02/building_digits_on_gcp_docker/blob/master/0_install_nvidia_drivers.sh)
 
 ```
 #!/bin/bash
@@ -25,19 +25,19 @@ if ! dpkg-query -W cuda; then
 fi
 ```
 
-Using 'chmod' change the permissions of this '.sh' file.
+## Using 'chmod' change the permissions of this '.sh' file.
 
 ```
 sudo chmod a+x 0_install_nvidia_drivers.sh
 ```
-Run the '0_install_nvidia_drivers.sh' file
+## Run the '0_install_nvidia_drivers.sh' file
 
 ```
 sudo ./0_install_nvidia_drivers.sh 
 ```
-The Script takes 6-8 minutes, depending on the resources alloted.
+## The Script takes 6-8 minutes, depending on the resources alloted.
 
-You must export the cuda path to your '.bashrc'.
+## You must export the cuda path to your '.bashrc'.
 
 ```
 echo 'export PATH=/usr/local/cuda-8.0/bin${PATH:+:${PATH}}' >> ~/.bashrc
@@ -45,7 +45,7 @@ echo 'export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64\' >> ~/.bashrc
 echo '                         ${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}' >> ~/.bashrc
 source ~/.bashrc
 ```
-Check if path has been exported.
+## Check if path has been exported.
 
 ```
 nvcc --version 
@@ -70,12 +70,12 @@ sudo chmod a+x 0_install_nvidia_drivers.sh
 ```
 sudo apt-get install --no-install-recommends git graphviz python-dev python-flask python-flaskext.wtf python-gevent python-h5py python-numpy python-pil python-pip python-scipy python-tk
 ```
-You can save it as a script as well and run [1_install_dependencies.sh](https://github.com/s3p02/building_digits_on_gcp_docker/blob/master/1_install_dependencies.sh) using 'chmod' change the permissions of this '.sh' file.
+## You can save it as a script as well and run [1_install_dependencies.sh](https://github.com/s3p02/building_digits_on_gcp_docker/blob/master/1_install_dependencies.sh) using 'chmod' change the permissions of this '.sh' file.
 
 ```
 sudo chmod a+x 0_install_nvidia_drivers.sh
 ```
-Run the '1_install_dependencies.sh' file
+## Run the '1_install_dependencies.sh' file
 
 ```
 sudo ./0_install_nvidia_drivers.sh 
@@ -84,21 +84,21 @@ sudo ./0_install_nvidia_drivers.sh
 
 # Building using Docker
 
-For building DIGITS from source, click [here](https://github.com/s3p02/building_digits_on_gcp/blob/master/README.md)
+## For building DIGITS from source, click [here](https://github.com/s3p02/building_digits_on_gcp/blob/master/README.md)
 
-The most Easiest way to get started with [DIGITS](https://developer.nvidia.com/digits) is using [NVIDIA-Docker](https://hub.docker.com/r/nvidia/digits/tags/).
+## The most Easiest way to get started with [DIGITS](https://developer.nvidia.com/digits) is using [NVIDIA-Docker](https://hub.docker.com/r/nvidia/digits/tags/).
 
 # Step 1: Install Docker
 
-Worth doing this line by line.
+## Worth doing this line by line.
 
-Remove any existing docker files, if any.
+## Remove any existing docker files, if any.
 
 ```
 sudo apt-get remove docker docker-engine docker.io
 ```
 
-Update System Packages
+## Update System Packages
 
 ```
 sudo apt-get update
@@ -162,7 +162,7 @@ wget https://github.com/NVIDIA/nvidia-docker/releases/download/v1.0.1/nvidia-doc
 ```
 sudo dpkg -i nvidia-docker_1.0.1-1_amd64.deb
 ```
-Verify installation
+## Verify installation
 
 ```
 sudo nvidia-docker run hello-world
