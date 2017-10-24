@@ -172,14 +172,14 @@ sudo nvidia-docker run hello-world
 
 
 ```
-sudo docker pull nvidia/digits:5.0
+sudo docker pull nvidia/digits
 ```
 
 # Step 3 : Run DIGITS 5.0 using NVIDIA-Docker
 
 
 ```
-sudo nvidia-docker run --name name_your_docker_container -d -p 5000:5000 -v $(pwd):/home/$USER nvidia/digits:5.0
+sudo nvidia-docker run --name name_your_docker_container -d -p 5000:5000 -v $(pwd):/home/$USER nvidia/digits
 ```
 
 curl is a tool to transfer data from or to a server, using one of the supported protocols (DICT, FILE, FTP, FTPS, GOPHER, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, POP3, POP3S, RTMP, RTSP, SCP, SFTP, SMB, SMBS, SMTP, SMTPS, TELNET and TFTP). The command is designed to work without user [interaction](https://curl.haxx.se/docs/manpage.html).
