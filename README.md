@@ -167,3 +167,17 @@ sudo dpkg -i nvidia-docker_1.0.1-1_amd64.deb
 ```
 sudo nvidia-docker run hello-world
 ```
+
+# Step 2 : Pull DIGITS 5.0
+
+
+```
+sudo docker pull nvidia/digits:5.0
+```
+
+# Step 3 : Run DIGITS 5.0 using NVIDIA-Docker
+
+
+```
+sudo nvidia-docker run --name mydigits -d -p 5000:5000 -v $(pwd):/home/$USER nvidia/digits
+```
