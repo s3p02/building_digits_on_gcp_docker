@@ -73,12 +73,12 @@ sudo apt-get install --no-install-recommends git graphviz python-dev python-flas
 ## You can save it as a script as well and run [1_install_dependencies.sh](https://github.com/s3p02/building_digits_on_gcp_docker/blob/master/1_install_dependencies.sh) using 'chmod' change the permissions of this '.sh' file.
 
 ```
-sudo chmod a+x 0_install_nvidia_drivers.sh
+sudo chmod a+x 1_install_dependencies.sh
 ```
 ## Run the '1_install_dependencies.sh' file
 
 ```
-sudo ./0_install_nvidia_drivers.sh 
+sudo ./1_install_dependencies.sh 
 ```
 
 
