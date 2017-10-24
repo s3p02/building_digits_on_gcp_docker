@@ -90,7 +90,7 @@ sudo ./1_install_dependencies.sh
 
 # Step 1: Install Docker
 
-## Worth doing this line by line.
+ Worth doing the following one by one.
 
 ## Remove any existing docker files, if any.
 
