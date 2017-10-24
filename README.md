@@ -181,3 +181,8 @@ sudo docker pull nvidia/digits:5.0
 ```
 sudo nvidia-docker run --name mydigits -d -p 5000:5000 -v $(pwd):/home/$USER nvidia/digits
 ```
+## The following response indicates that digits is running on 'localhost:5000'
+
+<kbd>
+  <img src="/d_3_docker.png">
+</kbd>
