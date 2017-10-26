@@ -1,4 +1,4 @@
-## Docker setup for DIGITS
+# Docker setup for DIGITS
 
 Check for Nvidia GPU
 
