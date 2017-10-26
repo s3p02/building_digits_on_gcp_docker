@@ -1,4 +1,6 @@
-# Check for Nvidia GPU
+## Docker setup for DIGITS
+
+Check for Nvidia GPU
 
 ```
 lspci
